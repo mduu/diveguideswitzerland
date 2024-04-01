@@ -18,6 +18,7 @@ Key features
 - Motivate comunity with gamification etc.
 
 **CAN:**
+- Desktop versions for Mac and/or Windows
 - A web-interface for desktop usage
 
 Technology
