@@ -1,0 +1,104 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Sizes -->
+    
+    <x:Double x:Key="SizeSm">8</x:Double>
+    <x:Double x:Key="SizeMd">12</x:Double>
+    <x:Double x:Key="SizeLg">16</x:Double>
+    <x:Double x:Key="SizeXl">24</x:Double>
+    <x:Double x:Key="SizeXxl">56</x:Double>
+    <x:Double x:Key="SizeHighButton">80</x:Double>
+    
+    <!-- Fontsizes -->
+    
+    <x:Double x:Key="FontSzXxl">32</x:Double>
+    <x:Double x:Key="FontSzXl">24</x:Double>
+    <x:Double x:Key="FontSzLg">20</x:Double>
+    <x:Double x:Key="FontSzMd">18</x:Double>
+    <x:Double x:Key="FontSzSm">16</x:Double>
+    
+    <!-- Thicknesses -->
+    
+    <Thickness x:Key="ThicknessTopSm" Top="{StaticResource SizeSm}" />
+    <Thickness x:Key="ThicknessTopMd" Top="{StaticResource SizeMd}" />
+    <Thickness x:Key="ThicknessTopLg" Top="{StaticResource SizeLg}" />
+    <Thickness x:Key="ThicknessTopXl" Top="{StaticResource SizeXl}" />
+    <Thickness x:Key="ThicknessBtmSm" Bottom="{StaticResource SizeSm}" />
+    <Thickness x:Key="ThicknessBtmMd" Bottom="{StaticResource SizeMd}" />
+    <Thickness x:Key="ThicknessBtmLg" Bottom="{StaticResource SizeLg}" />
+    <Thickness x:Key="ThicknessBtmXl" Bottom="{StaticResource SizeXl}" />
+    
+    <Thickness x:Key="ThicknessTopLgBtmSm"
+               Top="{StaticResource SizeLg}"
+               Bottom="{StaticResource SizeSm}" />
+    
+    <Thickness x:Key="ThicknessTopSmBtmSm"
+               Top="{StaticResource SizeSm}"
+               Bottom="{StaticResource SizeSm}" />
+    
+    <Thickness x:Key="ThicknessSm"
+               Left="{StaticResource SizeSm}"
+               Top="{StaticResource SizeSm}"
+               Right="{StaticResource SizeSm}"
+               Bottom="{StaticResource SizeSm}" />
+    
+    <Thickness x:Key="ThicknessRightSm"
+               Right="{StaticResource SizeSm}" />
+    
+    <Thickness x:Key="ThicknessLeftSm"
+               Left="{StaticResource SizeSm}" />
+    
+    <!-- Margins -->
+    
+    <Style TargetType="View" ApplyToDerivedTypes="true" Class="NoMargin">
+        <Setter Property="Margin" Value="0" />
+    </Style>
+    
+    <Style TargetType="View" Class="MarginTopSm" ApplyToDerivedTypes="true">
+        <Setter Property="Margin" Value="{StaticResource ThicknessTopSm}" />
+    </Style>
+    
+    <Style TargetType="View" Class="MarginBtmSm" ApplyToDerivedTypes="true">
+        <Setter Property="Margin" Value="{StaticResource ThicknessBtmSm}" />
+    </Style>
+    
+    <Style TargetType="View" Class="MarginTopMd" ApplyToDerivedTypes="true">
+        <Setter Property="Margin" Value="{StaticResource ThicknessTopMd}" />
+    </Style>
+    
+    <Style TargetType="View" Class="MarginBtmMd" ApplyToDerivedTypes="true">
+        <Setter Property="Margin" Value="{StaticResource ThicknessBtmMd}" />
+    </Style>
+    
+    <Style TargetType="View" Class="MarginTopLg" ApplyToDerivedTypes="true">
+        <Setter Property="Margin" Value="{StaticResource ThicknessTopLg}" />
+    </Style>
+    
+    <Style TargetType="View" Class="MarginBtmLg" ApplyToDerivedTypes="true">
+        <Setter Property="Margin" Value="{StaticResource ThicknessBtmLg}" />
+    </Style>   
+    
+    <Style TargetType="View" Class="MarginTopXl" ApplyToDerivedTypes="true">
+        <Setter Property="Margin" Value="{StaticResource ThicknessTopXl}" />
+    </Style>
+    
+    <Style TargetType="View" Class="MarginBtmXl" ApplyToDerivedTypes="true">
+        <Setter Property="Margin" Value="{StaticResource ThicknessBtmXl}" />
+    </Style>
+        
+    <Style TargetType="View" Class="MarginRightSm" ApplyToDerivedTypes="true">
+        <Setter Property="Margin" Value="{StaticResource ThicknessRightSm}" />
+    </Style>
+        
+    <Style TargetType="View" Class="MarginLeftSm" ApplyToDerivedTypes="true">
+        <Setter Property="Margin" Value="{StaticResource ThicknessLeftSm}" />
+    </Style>
+    
+    <!-- Paddings -->
+    
+    <Style TargetType="Layout" Class="PaddingSm" ApplyToDerivedTypes="true">
+        <Setter Property="Padding" Value="{StaticResource ThicknessSm}" />
+    </Style>
+
+</ResourceDictionary>

@@ -3,13 +3,28 @@
     x:Class="Mobile.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Mobile"
-    Shell.FlyoutBehavior="Disabled"
+    xmlns:divespots="clr-namespace:Mobile.Features.Divespots"
+    FlyoutBehavior="Disabled"
     Title="Mobile">
+    
+    <TabBar >
+        
+        <Tab Title="Spots">
+            <ShellContent
+                Title="My Airplanes"
+                ContentTemplate="{DataTemplate divespots:DivespotsPage}"
+                Route="MainPage" />
+        </Tab>
+        
+        <Tab Title="Fill">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+            <ShellContent
+                ContentTemplate="{DataTemplate divespots:DivespotsPage}"
+                Route="MainPage" />
+            
+        </Tab>
+        
+    </TabBar>
+
 
 </Shell>
