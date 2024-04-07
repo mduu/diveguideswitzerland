@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 		..\LICENCE.txt = ..\LICENCE.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contract", "Contract\Contract.csproj", "{C57F282F-D254-4FB1-AA34-1B3AAFC0A7F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{6551133B-4054-469F-B36B-FC58FEA70B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6551133B-4054-469F-B36B-FC58FEA70B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6551133B-4054-469F-B36B-FC58FEA70B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C57F282F-D254-4FB1-AA34-1B3AAFC0A7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C57F282F-D254-4FB1-AA34-1B3AAFC0A7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C57F282F-D254-4FB1-AA34-1B3AAFC0A7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C57F282F-D254-4FB1-AA34-1B3AAFC0A7F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

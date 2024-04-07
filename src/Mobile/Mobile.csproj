@@ -86,4 +86,8 @@
       </Compile>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Contract\Contract.csproj" />
+    </ItemGroup>
+
 </Project>
