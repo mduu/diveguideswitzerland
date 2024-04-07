@@ -10,14 +10,14 @@
     
     <TabBar >
         
-        <Tab Title="Divspots">
+        <Tab Title="Divspots" Icon="diver">
             <ShellContent
                 Title="Dive spots"
                 ContentTemplate="{DataTemplate divespots:DivespotsPage}"
                 Route="MainPage" />
         </Tab>
         
-        <Tab Title="Filling Stations">
+        <Tab Title="Filling Stations" Icon="tank_filled">
 
             <ShellContent
                 Title="Filling Stations"
