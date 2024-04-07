@@ -42,6 +42,6 @@ public record SpecialFeatures(
 
 public record Images(
     ImageReference TitleImage,
-    ImageReference[] UnderwaterImages,
-    ImageReference[] EntryImages,
-    ImageReference[] ParkingImages);
+    ImageReference[]? UnderwaterImages = null,
+    ImageReference[]? EntryImages = null,
+    ImageReference[]? ParkingImages = null);
