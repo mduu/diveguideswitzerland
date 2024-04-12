@@ -2,10 +2,40 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Mobile.Features.Divespots.DivespotsPage">
+             xmlns:divespots="clr-namespace:Mobile.Features.Divespots"
+             xmlns:divespots1="clr-namespace:DiveGuideSwitzerland.Contracts.Divespots;assembly=Contracts"
+             x:Class="Mobile.Features.Divespots.DivespotsPage"
+             x:DataType="divespots:DivespotsPageViewModel">
     <ContentPage.Content>
-        <ScrollView>
-            <Label>Hi from Divespots</Label>
+        <ScrollView Padding="4">
+
+            <FlexLayout BindableLayout.ItemsSource="{Binding Waters}"
+                        Direction="Row"
+                        JustifyContent="SpaceAround"
+                        AlignItems="Stretch"
+                        Wrap="Wrap">
+
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="divespots1:Waters">
+
+                        <Border Style="{StaticResource HighlightedInfobox}"
+                                HeightRequest="100"
+                                Margin="4"
+                                FlexLayout.Grow="1">
+                            <!-- <Border.GestureRecognizers> -->
+                            <!--     <TapGestureRecognizer Tapped="TgOpenModel"></TapGestureRecognizer> -->
+                            <!-- </Border.GestureRecognizers> -->
+
+                            <Label
+                                Style="{StaticResource HighlightedInfoboxLabelTitle}"
+                                Text="{Binding Name.Default}" />
+                        </Border>
+
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+
+            </FlexLayout>
+
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

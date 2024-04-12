@@ -78,7 +78,7 @@
     </Style>
 
     <Style TargetType="Label" x:Key="HighlightedInfoboxLabelTitle" BasedOn="{StaticResource HighlightedInfoboxLabelBold}">
-        <Setter Property="FontSize" Value="{StaticResource FontSzXxl}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSzXl}" />
         <Setter Property="TextColor" Value="{StaticResource PrimaryText}" />
     </Style>
     
