@@ -38,7 +38,8 @@
                                 <Label
                                     Style="{StaticResource HighlightedInfoboxLabelTitle}"
                                     Text="{Binding Name.Default}"
-                                    LineBreakMode="CharacterWrap"
+                                    LineBreakMode="TailTruncation"
+                                    MaxLines="2"
                                     VerticalTextAlignment="Center"
                                     HorizontalTextAlignment="Center"/>
                             </Border>
