@@ -19,7 +19,7 @@ public partial class DivespotsPageViewModel : ObservableObject
 
     private void LoadWaters()
     {
-        divespotService.GetWaters(true).ContinueWith(
+        divespotService.GetWaters(false).ContinueWith(
             t => Waters = !t.IsFaulted
                 ? t.Result
                     .OrderBy(w => w.Name.Default)

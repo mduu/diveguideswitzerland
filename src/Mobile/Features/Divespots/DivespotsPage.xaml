@@ -9,32 +9,46 @@
     <ContentPage.Content>
         <ScrollView Padding="4">
 
-            <FlexLayout BindableLayout.ItemsSource="{Binding Waters}"
-                        Direction="Row"
-                        JustifyContent="SpaceAround"
-                        AlignItems="Stretch"
-                        Wrap="Wrap">
+            <VerticalStackLayout>
+                <Label Style="{StaticResource TransparentHeader}"
+                       Text="Schweizer Gewässer:"
+                       Margin="{StaticResource ThicknessTopXxl}"/>
 
-                <BindableLayout.ItemTemplate>
-                    <DataTemplate x:DataType="divespots1:Waters">
+                <FlexLayout BindableLayout.ItemsSource="{Binding Waters}"
+                            Direction="Row"
+                            Wrap="Wrap"
+                            AlignItems="Start"
+                            JustifyContent="Start"
+                            AlignContent="Start">
 
-                        <Border Style="{StaticResource HighlightedInfobox}"
-                                HeightRequest="100"
-                                Margin="4"
-                                FlexLayout.Grow="1">
-                            <!-- <Border.GestureRecognizers> -->
-                            <!--     <TapGestureRecognizer Tapped="TgOpenModel"></TapGestureRecognizer> -->
-                            <!-- </Border.GestureRecognizers> -->
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate x:DataType="divespots1:Waters">
 
-                            <Label
-                                Style="{StaticResource HighlightedInfoboxLabelTitle}"
-                                Text="{Binding Name.Default}" />
-                        </Border>
+                            <Border Style="{StaticResource HighlightedInfobox}"
+                                    HeightRequest="{StaticResource SizeHeightPanel}"
+                                    Margin="{StaticResource SizeXsm}"
+                                    FlexLayout.Grow="1"
+                                    FlexLayout.AlignSelf="Start"
+                                    MinimumWidthRequest="100"
+                                    MaximumWidthRequest="200">
+                                <!-- <Border.GestureRecognizers> -->
+                                <!--     <TapGestureRecognizer Tapped="TgOpenModel"></TapGestureRecognizer> -->
+                                <!-- </Border.GestureRecognizers> -->
 
-                    </DataTemplate>
-                </BindableLayout.ItemTemplate>
+                                <Label
+                                    Style="{StaticResource HighlightedInfoboxLabelTitle}"
+                                    Text="{Binding Name.Default}"
+                                    LineBreakMode="CharacterWrap"
+                                    VerticalTextAlignment="Center"
+                                    HorizontalTextAlignment="Center"/>
+                            </Border>
 
-            </FlexLayout>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+
+                </FlexLayout>
+
+            </VerticalStackLayout>
 
         </ScrollView>
     </ContentPage.Content>

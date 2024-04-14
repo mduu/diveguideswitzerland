@@ -10,7 +10,7 @@
     <Style TargetType="Button" x:Key="FunctionButton">
         <Setter Property="FontSize" Value="{StaticResource FontSzSm}"/>
         <Setter Property="LineBreakMode" Value="WordWrap"/>
-        <Setter Property="HeightRequest" Value="{StaticResource SizeHighButton}"/>
+        <Setter Property="HeightRequest" Value="{StaticResource SizeHeightButton}"/>
     </Style>
     
     <Style TargetType="Button" x:Key="InfoButton">
@@ -31,11 +31,21 @@
         <Setter Property="StrokeThickness" Value="0" />
         <Setter Property="StrokeShape" Value="RoundRectangle 16" />
     </Style>
+    
+    <!-- Headering -->
+    <Style TargetType="Label" x:Key="TransparentHeader">
+        <Setter Property="TextColor" Value="{StaticResource White}" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontFamily" Value="OpenSansSemibold" />
+        <Setter Property="FontSize" Value="{StaticResource FontSzXl}" />
+        <Setter Property="Shadow" Value="true" />
+    </Style>
 
     <!-- Infobox -->
 
     <Style TargetType="Border" x:Key="Infobox" BasedOn="{StaticResource RoundedBorder}">
         <Setter Property="BackgroundColor" Value="{StaticResource Gray100}" />
+        <Setter Property="Shadow" Value="true" />
     </Style>
 
     <Style TargetType="Label" x:Key="InfoboxLabel">

@@ -9,7 +9,7 @@ internal class StaticDivespotService : IDivespotService
         => Task.FromResult(
             StaticTestdata.Waters
                 .Where(w =>
-                    StaticTestdata.Divespots.Any(d => d.WatersId.Id == w.WatersId.Id)));
+                    !onlyWithDiveSpots || StaticTestdata.Divespots.Any(d => d.WatersId.Id == w.WatersId.Id)));
 
     public Task<IEnumerable<Divespot>> GetDivespotsForWaters(WatersId watersId)
         => Task.FromResult<IEnumerable<Divespot>>(
